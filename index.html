@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="images/Tomas-Valero.ico">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portafolio de Tomás</title>
+</head>
+<body>
+    <header>
+        <nav id="navegador">
+            <button id="responsive-menu">&#9776;</button>
+            <ul id="lista-nav">
+                <li><a href="#inicio-section">Inicio</a></li>
+                <li><a href="#skill-section">Habilidades</a></li>
+                <li><a href="#proyectos-section">Proyectos</a></li>
+                <li><a href="#contacto-section">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio-section">
+        <div>
+            <img src="images/FotoPerfilNueva.jpg" alt="Foto de perfil de Tomás">
+        </div>
+        <div class="round-container" style="margin-bottom: 20px;">
+            <h1>Tomás Valero</h1>
+            <h2>Desarrollador de Software | Guardavidas</h2>
+        </div>
+        <div class="round-container" style>
+            <p>
+                ¡Hola! Soy Tomás, estudiante de Programación en la UTN y futuro guardavidas. Siempre estoy abierto a aprender nuevas herramientas y busco mantenerme actualizado sobre las últimas tecnologías. Aspiro a poder trabajar en el mundo del software.
+                Disfruto analizar y resolver problemas mediante código, creo que es algo en lo que realmente he mejorado a lo largo del tiempo.
+                Me gusta el trabajo en equipo y es una de las habilidades que más desarrollé en mi paso por la carrera de guardavidas.
+                ¡Gracias por visitar mi perfil!
+            </p>
+        </div>
+        <div>
+            <a href="#contacto-section" class="button-like">Contáctame</a>
+            <a href="cv/CV Tomas Valero .pdf" download="CV_Tomas_Valero.pdf" class="button-like">Descargar CV</a>
+            
+        </div>
+    </section>
+    <section id="skill-section" class="round-container">
+        <h2>Habilidades</h2>
+        <div>
+            <img src="images/c-plus-plus.png" class="skill-image">
+            <img src="images/html.png" class="skill-image">
+            <img src="images/css.png" class="skill-image">
+            <img src="images/sql.png" class="skill-image">
+            <img src="images/git.png" class="skill-image">
+            <img src="images/dotnet.png" class="skill-image">
+        </div>
+    </section>
+    <section id="proyectos-section">
+            <div class="proy-container">
+                <a href="https://github.com/TomiValero/App-WinForm"><img src="images/WinformProy.jpg" alt="imagen de proyecto Winform"></a>
+                <h3>Catálogo - C# | T-SQL</h3> 
+                <p>
+                    Aplicación para la gestión de artículos de un catálogo de un comercio. La aplicación es genérica, es decir, puede aplicar para cualquier tipo de comercio; y la información que en ella se cargue será consumida luego desde distintos servicios para ser mostrada ya sea en webs, e-commerces, apps móviles, revistas, etc. 
+                </p>
+            </div>
+            <div class="proy-container">   
+                <a href="https://github.com/TomiValero/Ejercicio-Archivos-"><img src="images/ArchProy.jpg" alt="imagen de proyecto de archivos"></a>
+                <h3>Registro de Jugadores - C++</h3>                 
+                <p>
+                    Programa destinado al manejo de archivos de jugadores, equipos, deportes, etc. En C++.
+                </p>
+            </div>
+            <div class="proy-container">
+                <a href="https://github.com/TomiValero/Juego-en-C"><img src="images/JuegoProy.jpg" alt="imagen de juego Quinientos"></a>   
+                <h3>Juego "Quinientos" - C</h3> 
+                <p>
+                    Se realizó un juego de dados denominado Quinientos o Escalera, que es un juego que puede desarrollarse para un jugador o dos jugadores. El programa cuenta con un menú principal que permite iniciar un juego nuevo para un jugador, un juego nuevo para dos jugadores, mostrar la puntuación más alta y la opción de Salir del juego.
+                </p>
+            </div>
+            <div class="proy-container">
+                <a href=""><img src="images/PortfolioProy.jpg" alt="imagen de Portfolio"></a>   
+                <h3>Portfolio - HTML | CSS | JS</h3> 
+                <p>
+                    Portfolio propio, realizado con html, css y javascript.
+                </p>
+            </div>
+    </section>  
+    <section id="contacto-section">
+        <div  class="round-container">
+        <h2>¿Charlamos?</h2>
+        <p>Actualmente estoy en busca de una nueva oportunidad donde pueda poner en práctica mis conocimientos y continuar mi camino como desarrollador de software. ¡No dudes en escribirme!</p>       
+        <a href="https://www.linkedin.com/in/tomas-valero-b125481a7/"><img src="images/Linkedin.png" alt="Linkedin img"></a>  
+        <a href="https://github.com/TomiValero"><img src="images/Github.png" alt="Github img"></a>  
+        </div>
+        <form class="round-container" onsubmit="enviarCorreo(event)">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required placeholder="Tu nombre aquí"  style="background-color: #000000; border-radius: 15px;">
+            </div>
+            <div>
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" required placeholder="Oportunidad laboral - Nombre de la empresa" style="background-color: #000000; border-radius: 15px;">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="tuemail@mail.com" style="background-color: #000000; border-radius: 15px;" >
+            </div>
+            <div>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" required placeholder="Hola Tomás,..." style="background-color: #000000; border-radius: 15px; height: 100px; width: 100%; resize: none;"></textarea>
+            </div>
+            <button type="submit" style="background-color: #000000;">Enviar Email</button>
+        </form>
+        
+    </section>
+    <footer >
+        <p>Tomas Valero</p>
+        <p>Made in Argentina</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

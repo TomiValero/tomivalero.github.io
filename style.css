@@ -1,0 +1,258 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1d1d1d;
+    color: #ffffff;
+    background-image: url('images/Fondo.png'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+/* Estilos generales */
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a.button-like {
+    display: inline-block;
+    background-color: #1d1d1d;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+a.button-like:hover {
+    background-color: hsl(0, 0%, 33%);
+}
+
+button {
+    background-color: #1d1d1d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#enviar-button:hover {
+    background-color: #555555;
+}
+#enviar-button{
+    background-color: #000000;
+    border-radius: 25px;
+}
+
+/* Navegación flotante en burbuja */
+#navegador {
+    position: fixed;
+    width: auto;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: #111111;
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+
+#navegador ul {
+    list-style: none;
+    text-align: center;
+}
+
+#navegador li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#navegador li a {
+    transition: color 0.3s ease;
+}
+
+#navegador li a:hover {
+    color: #dddddd; 
+}
+#responsive-menu{
+    display: none;
+    background-color: #111111;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 980px) {
+    #responsive-menu {
+        display: block;
+    }
+    #navegador{
+        display: grid;
+    }
+    #navegador li {
+        display: block;
+        margin-top: 20px;
+    }
+    #navegador ul{
+        display: none;
+    }
+    #navegador ul.visible{
+        display: block;
+    }
+    
+}
+/* Secciones */
+section {
+    padding: 100px 0;
+}
+
+/* Sección de inicio con botones centrados abajo */
+#inicio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#inicio-section img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+#inicio-section div {
+    max-width: 600px;
+    text-align: center;
+}
+
+#inicio-section div:last-child {
+    align-self: center;
+    margin-top: 20px;
+}
+
+/* Sección de habilidades centrada y con bordes redondeados */
+.round-container {
+    background-color: #1d1d1d;
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+    margin: 50px;
+    margin-top: 30px;
+}
+
+.skill-image {
+    max-width: 80px;
+    margin: 20px;
+}
+
+.input-round{
+    background-color: #000000;
+    border-radius: 15px;
+}
+/* Sección de proyectos en tarjetas */
+
+#proyectos-section {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start; 
+}
+
+#proyectos-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.proy-container{
+    background-color: #1d1d1d;
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+    margin: 50px;
+    width: 400px;
+    height: auto;
+}
+#proyectos-section h3 {
+    margin: 10px;
+}
+
+/* Sección de contacto con texto al lado del formulario */
+#contacto-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 0 10%; 
+}
+
+#contacto-section > div {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+#contacto-section h2 {
+    margin-bottom: 20px;
+}
+
+#contacto-section p {
+    margin-bottom: 20px;
+}
+
+#contacto-section .links-container {
+    margin-bottom: 20px;
+}
+
+
+#contacto-section form {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px;
+}
+
+#contacto-section input, #contacto-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #1d1d1d;
+    border: none;
+    color: #ffffff;
+}
+
+#contacto-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contacto-section button {
+    width: 50%;
+    margin: 0 auto; 
+}
+#contacto-section img{
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+footer{
+    background-color: #1d1d1d;
+    padding: 80px;
+    margin-top: 50px;
+}
+
+footer p{
+    margin: 20px;
+}
